@@ -31,3 +31,5 @@ resnet = models.resnet50(weights='DEFAULT')
 resnet.fc = nn.Identity()
 resnet.load_state_dict(torch.load('root/phase1_final_encoder.pt', map_location = device, weights_only = False))
 ```
+Download `phase1_final_encoder.pt` through the following link-
+[Google Drive](https://drive.google.com/file/d/1zNgsu2sn964O54Keq_Op0Xsi3joelJUc/view?usp=drivesdk)
