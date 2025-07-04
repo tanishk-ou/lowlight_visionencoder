@@ -21,3 +21,13 @@ Linear Evaluation :-
 |:----:|-----:|-----:|
 |5-Fold Top-1 Accuracy|65.04%|65.64%|
 |5-Fold Top-5 Accuracy|94.08%|94.65%|
+
+## Files
+### Phase 1
+Saved weights for Resnet50 can be loaded from the `phase1_final_encoder.pt` through the following code and replacing `root` with the directory where the `.pt` file is saved, and `device` with either `'cuda'` or `'cpu'`.
+```python
+from torchvision import models
+resnet = models.resnet50(weights='DEFAULT')
+resnet.fc = nn.Identity()
+resnet.load_state_dict(torch.load('root/phase1_final_encoder.pt', map_location = device, weights_only = False))
+```
