@@ -24,12 +24,13 @@ Linear Evaluation :-
 
 ## Files
 ### Phase 1
-Saved weights for Resnet50 can be loaded from the `phase1_final_encoder.pt` through the following code and replacing `root` with the directory where the `.pt` file is saved, and `device` with either `'cuda'` or `'cpu'`.
+Download `phase1_final_encoder.pt` through the following link-
+[Google Drive](https://drive.google.com/file/d/1zNgsu2sn964O54Keq_Op0Xsi3joelJUc/view?usp=drivesdk)
+<br>
+Saved weights for Resnet50 can be loaded from `phase1_final_encoder.pt` file through the following code and replacing `root` with the directory where the `.pt` file is saved, and `device` with either `'cuda'` or `'cpu'`.
 ```python
 from torchvision import models
 resnet = models.resnet50(weights='DEFAULT')
 resnet.fc = nn.Identity()
 resnet.load_state_dict(torch.load('root/phase1_final_encoder.pt', map_location = device, weights_only = False))
 ```
-Download `phase1_final_encoder.pt` through the following link-
-[Google Drive](https://drive.google.com/file/d/1zNgsu2sn964O54Keq_Op0Xsi3joelJUc/view?usp=drivesdk)
