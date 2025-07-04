@@ -24,7 +24,7 @@ Linear Evaluation :-
 
 ## Files
 ### Phase 1
-Download `phase1_final_encoder.pt` through the following link-
+Download `phase1_final_encoder.pt` through the following link-<br>
 [Google Drive](https://drive.google.com/file/d/1zNgsu2sn964O54Keq_Op0Xsi3joelJUc/view?usp=drivesdk)
 <br><br>
 Saved weights for Resnet50 can be loaded from `phase1_final_encoder.pt` file through the following code and replacing `root` with the directory where the `.pt` file is saved, and `device` with either `'cuda'` or `'cpu'`.
