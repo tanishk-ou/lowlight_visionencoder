@@ -1,18 +1,12 @@
 # Low Light Vision Encoder
-A 3-phase training plan for a generalized low light vision encoder.
+Training to build a generalized low-light image feature extractor.
 
 ## Theory
 If a feature extractor is trained on multiple tasks simultaneously, then the features extractor should be able to provide good features generalized to all low light related tasks.
 
-## Training Plan
-### 1st Phase
-Training a single encoder on 3 different computer vision, low light related tasks on a synthetically darkened low light image dataset.
-### 2nd Phase
-Training the encoder from previous phase on 2 different tasks on a synthetically simulated low light image dataset.
-### 3rd Phase
-Training the encoder from previous phase using Self-Supervised Learning on a real low light image dataset.
-### Evaluation
-Evaluating the encoder on a classification task on a low light image dataset, provided the encoder has never been trained on any classification-related task nor has it seen the dataset used for evaluation.
+## Training
+A single feature extractor (ResNet-50) is taken and a U-Net is attached onto it which performs two tasks - Low-Light Image Enhancement & Semantic Segmentation.<br>
+
 
 ## Results
 ### Phase 1
