@@ -1,11 +1,12 @@
 # Low Light Vision Encoder
-Training to build a generalized low-light image feature extractor.
+Building a **Low-Light Image Feature Extractor**.<br>
+The feature extracting will be done directly on Low-Light images **without enhancing them**.
 
 ## Theory
-If a feature extractor is trained on multiple tasks simultaneously, then the features extractor should be able to provide good features generalized to all low light related tasks.
+If a feature extractor is trained on **multiple tasks simultaneously**, then the features extractor should be able to provide good features generalized to all low light related tasks.
 
 ## Training
-A single feature extractor (ResNet-50) is taken and a U-Net is attached onto it which performs two tasks - Low-Light Image Enhancement & Semantic Segmentation.<br>
+A single feature extractor (ResNet-50) is taken and a U-Net is attached onto it which performs two tasks - **Low-Light Image Enhancement** & **Semantic Segmentation**.<br>
 
 
 ## Results
