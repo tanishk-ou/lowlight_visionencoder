@@ -18,8 +18,8 @@ A single feature extractor (ResNet-50) is taken and a U-Net is attached onto it 
 ### EX-DARK DATASET
 | Metrics | Pretrained ResNet-50 | Fine-Tuned ResNet-50 |
 |:----:|-----:|-----:|
-|Top-1 Accuracy|65.04%|72.69%<span style="color:green"> (+7.65%)</span>|
-|Top-5 Accuracy|94.08%|95.79%<span style="color:green"> (+1.71%)</span>|
+|Top-1 Accuracy|65.04%|**72.69%** <span style="color:green"> (+7.65%) </span>|
+|Top-5 Accuracy|94.08%|**95.79%** <span style="color:green"> (+1.71%) </span>|
 
 ## Files
 ### Phase 1
