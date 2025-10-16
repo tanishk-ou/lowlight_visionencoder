@@ -6,8 +6,8 @@ The feature extracting will be done directly on Low-Light images **without enhan
 If a feature extractor is trained on **multiple tasks simultaneously**, then the features extractor should be able to provide good features generalized to all low light related tasks.
 
 ## Training
-A single feature extractor (ResNet-50) is taken and a U-Net is attached onto it which performs two tasks - **Low-Light Image Enhancement** & **Semantic Segmentation**.<br>
-**Specifics:-** <br>
+A single feature extractor (ResNet-50) is taken and a U-Net is attached onto it which performs two tasks - **Low-Light Image Enhancement** & **Semantic Segmentation**.<br><br>
+**Specifics:-**
 - ResNet-50 backbone is **unfrozen**. The backbone is wrapped into an Encoder which outputs feature maps from each layer to be used in skip connections.
 - A combined U-Net model is used with custom decoder blocks. Out of the 6 decoder blocks (including final head), 3 are **shared** between the tasks, and 3 are **task-specific**.
 
